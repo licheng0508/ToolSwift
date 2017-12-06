@@ -26,12 +26,14 @@ class LLIndexViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.dataArray = ["1", "2"];
+        
+        //隐藏多余的cell
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        self.dataArray = ["获取网络接口"];
     }
     
     // MARK: - UITableView 代理/数据源方法
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return self.dataArray?.count ?? 0;
@@ -39,11 +41,17 @@ class LLIndexViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: Index_List_Cell)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: Index_List_Cell)!
+
         cell.textLabel?.text = self.dataArray?[indexPath.row] ?? "";
         
         return cell;
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        LLPrint(indexPath.row)
+        
     }
 
     override func didReceiveMemoryWarning() {
