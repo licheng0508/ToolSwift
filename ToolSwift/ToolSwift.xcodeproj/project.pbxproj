@@ -76,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3879A2B1FDA647900125AEA /* LIb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LIb;
+			sourceTree = "<group>";
+		};
 		E39C176C1FC2C1370023F134 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +147,7 @@
 		E39C17A71FC2C1D50023F134 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E3879A2B1FDA647900125AEA /* LIb */,
 			);
 			path = Other;
 			sourceTree = "<group>";
