@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk0-aa-e4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1415" y="-125"/>
+            <point key="canvasLocation" x="-1303" y="-125"/>
         </scene>
         <!--ToolSwift-->
         <scene sceneID="OGD-b1-Irx">
@@ -52,7 +52,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egp-U4-HVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631" y="-125"/>
+            <point key="canvasLocation" x="-465" y="-125"/>
         </scene>
     </scenes>
 </document>
