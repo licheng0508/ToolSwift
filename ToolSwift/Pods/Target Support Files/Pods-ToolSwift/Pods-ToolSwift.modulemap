@@ -1,0 +1,6 @@
+framework module Pods_ToolSwift {
+  umbrella header "Pods-ToolSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
