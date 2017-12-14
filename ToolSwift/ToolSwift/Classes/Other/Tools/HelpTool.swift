@@ -23,6 +23,11 @@ extension UIColor {
     }
 }
 
+extension String {
+    static let searchHistoryKey = "searchHistoryKey"
+    static let sexTypeKey = "sexTypeKey"
+}
+
 //MARK: swizzledMethod
 extension NSObject {
     
@@ -41,6 +46,18 @@ extension NSObject {
                                 method_getTypeEncoding(originalMethod))
         } else {
             method_exchangeImplementations(originalMethod, swizzledMethod)
+        }
+    }
+}
+
+//MARK: SnapKit
+extension ConstraintView {
+    
+    var usnp: ConstraintBasicAttributesDSL {
+        if #available(iOS 11.0, *) {
+            return self.safeAreaLayoutGuide.snp
+        } else {
+            return self.snp
         }
     }
 }
