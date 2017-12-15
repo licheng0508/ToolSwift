@@ -10,15 +10,35 @@ import UIKit
 
 class LLBoutiqueListViewController: LLBaseViewController {
 
+    private var sexType: Int = UserDefaults.standard.integer(forKey: String.sexTypeKey)
+    private var galleryItems = [GalleryItemModel]()
+    private var TextItems = [TextItemModel]()
+    private var comicLists = [ComicListModel]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        loadData()
     }
     
+    /// 获取数据
+    private func loadData(_ changeSex: Bool = false){
+    
+        if changeSex {
+            sexType = 3 - sexType
+            UserDefaults.standard.set(sexType, forKey: String.sexTypeKey)
+            UserDefaults.standard.synchronize()
+            NotificationCenter.default.post(name: .USexTypeDidChange, object: nil)
+        }
+        
+        ApiLoadingProvider.request(ApiTool.boutiqueList(sexType: sexType), model: BoutiqueListModel.self) { [weak self] (returnData) in
+            
+            self?.galleryItems = returnData?.galleryItems ?? []
+            self?.TextItems = returnData?.textItems ?? []
+            self?.comicLists = returnData?.comicLists ?? []
+            
+        }
+        
+    }
 }

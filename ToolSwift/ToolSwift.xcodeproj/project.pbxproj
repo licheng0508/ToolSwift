@@ -138,13 +138,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E3879A2F1FE11D3600125AEA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E3879A311FE11D7800125AEA /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				E3879A341FE2106400125AEA /* Controller */,
-				E3879A351FE2106400125AEA /* Model */,
 				E3879A361FE2106400125AEA /* View */,
 			);
 			path = Mine;
@@ -172,13 +164,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E3879A351FE2106400125AEA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E3879A361FE2106400125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				E3879A381FE2106400125AEA /* Controller */,
-				E3879A391FE2106400125AEA /* Model */,
 				E3879A3A1FE2106400125AEA /* View */,
 			);
 			path = Base;
@@ -208,13 +192,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E3879A391FE2106400125AEA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E3879A3A1FE2106400125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				E3879A3C1FE2106400125AEA /* Controller */,
-				E3879A3D1FE2106400125AEA /* Model */,
 				E3879A3E1FE2106400125AEA /* View */,
 			);
 			path = Book;
@@ -244,13 +220,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E3879A3D1FE2106400125AEA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E3879A3E1FE2106400125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				E3879A401FE2106500125AEA /* Controller */,
-				E3879A411FE2106500125AEA /* Model */,
 				E3879A421FE2106500125AEA /* View */,
 			);
 			path = Search;
@@ -276,13 +244,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E3879A411FE2106500125AEA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E3879A421FE2106500125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				E3879A441FE2106500125AEA /* Controller */,
-				E3879A451FE2106500125AEA /* Model */,
 				E3879A461FE2106500125AEA /* View */,
 			);
 			path = Cate;
@@ -306,13 +266,6 @@
 				E3879A621FE24CE300125AEA /* LLCateListViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E3879A451FE2106500125AEA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E3879A461FE2106500125AEA /* View */ = {
@@ -421,7 +374,6 @@
 			isa = PBXGroup;
 			children = (
 				E3879A2E1FE11D3600125AEA /* Controller */,
-				E3879A2F1FE11D3600125AEA /* Model */,
 				E3879A2D1FE11D3600125AEA /* View */,
 			);
 			path = Index;
@@ -747,6 +699,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ToolSwift/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -767,6 +720,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ToolSwift/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
