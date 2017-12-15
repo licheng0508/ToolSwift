@@ -43,6 +43,14 @@
 		E3879A941FE3973600125AEA /* LLNetWorkLoadingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A921FE3973600125AEA /* LLNetWorkLoadingTool.swift */; };
 		E3879A951FE3973600125AEA /* MBProgressHUDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A931FE3973600125AEA /* MBProgressHUDTool.swift */; };
 		E3879A971FE39FF500125AEA /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A961FE39FF500125AEA /* CALayerExtension.swift */; };
+		E3879A9A1FE3A6AF00125AEA /* LLCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A991FE3A6AF00125AEA /* LLCollectionViewAlignedLayout.swift */; };
+		E3879AA01FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A9F1FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift */; };
+		E3879AA21FE3AC0F00125AEA /* LLComicCHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879AA11FE3AC0F00125AEA /* LLComicCHeadView.swift */; };
+		E3879AA41FE3AC8B00125AEA /* LLComicCFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879AA31FE3AC8B00125AEA /* LLComicCFootView.swift */; };
+		E3879AA61FE3ACBC00125AEA /* LLComicCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879AA51FE3ACBC00125AEA /* LLComicCCell.swift */; };
+		E3879AA81FE3ACF300125AEA /* LLBoardCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879AA71FE3ACF300125AEA /* LLBoardCCell.swift */; };
+		E3879AAB1FE3ADEE00125AEA /* LLRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879AAA1FE3ADEE00125AEA /* LLRefresh.swift */; };
+		E3879AAE1FE3AF1A00125AEA /* LLEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879AAD1FE3AF1A00125AEA /* LLEmptyDataSet.swift */; };
 		E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C17781FC2C1370023F134 /* AppDelegate.swift */; };
 		E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C17AA1FC2C2360023F134 /* LLIndexViewController.swift */; };
 		E39C17AF1FC2C2F80023F134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39C17AE1FC2C2F80023F134 /* Launch Screen.storyboard */; };
@@ -88,6 +96,14 @@
 		E3879A921FE3973600125AEA /* LLNetWorkLoadingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLNetWorkLoadingTool.swift; sourceTree = "<group>"; };
 		E3879A931FE3973600125AEA /* MBProgressHUDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDTool.swift; sourceTree = "<group>"; };
 		E3879A961FE39FF500125AEA /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		E3879A991FE3A6AF00125AEA /* LLCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
+		E3879A9F1FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
+		E3879AA11FE3AC0F00125AEA /* LLComicCHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicCHeadView.swift; sourceTree = "<group>"; };
+		E3879AA31FE3AC8B00125AEA /* LLComicCFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicCFootView.swift; sourceTree = "<group>"; };
+		E3879AA51FE3ACBC00125AEA /* LLComicCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicCCell.swift; sourceTree = "<group>"; };
+		E3879AA71FE3ACF300125AEA /* LLBoardCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBoardCCell.swift; sourceTree = "<group>"; };
+		E3879AAA1FE3ADEE00125AEA /* LLRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLRefresh.swift; sourceTree = "<group>"; };
+		E3879AAD1FE3AF1A00125AEA /* LLEmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEmptyDataSet.swift; sourceTree = "<group>"; };
 		E39C17751FC2C1370023F134 /* ToolSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39C17781FC2C1370023F134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39C17841FC2C1370023F134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +144,10 @@
 		E3879A2D1FE11D3600125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3879AA11FE3AC0F00125AEA /* LLComicCHeadView.swift */,
+				E3879AA31FE3AC8B00125AEA /* LLComicCFootView.swift */,
+				E3879AA51FE3ACBC00125AEA /* LLComicCCell.swift */,
+				E3879AA71FE3ACF300125AEA /* LLBoardCCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +364,31 @@
 			path = NetWorkLoading;
 			sourceTree = "<group>";
 		};
+		E3879A981FE3A67E00125AEA /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E3879A991FE3A6AF00125AEA /* LLCollectionViewAlignedLayout.swift */,
+				E3879A9F1FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		E3879AA91FE3ADAC00125AEA /* LLRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				E3879AAA1FE3ADEE00125AEA /* LLRefresh.swift */,
+			);
+			path = LLRefresh;
+			sourceTree = "<group>";
+		};
+		E3879AAC1FE3AEF800125AEA /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				E3879AAD1FE3AF1A00125AEA /* LLEmptyDataSet.swift */,
+			);
+			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
 		E39C176C1FC2C1370023F134 = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +447,9 @@
 				E3879A911FE3809400125AEA /* NetWorkLoading */,
 				E3879A8B1FE36BD900125AEA /* Common */,
 				E3879A901FE36C5900125AEA /* NoticeBar */,
+				E3879AA91FE3ADAC00125AEA /* LLRefresh */,
+				E3879AAC1FE3AEF800125AEA /* EmptyDataSet */,
+				E3879A981FE3A67E00125AEA /* CollectionViewLayout */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -562,16 +610,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3879AA01FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				E3879A821FE2787C00125AEA /* UIViewExtension.swift in Sources */,
 				E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */,
 				E3879A7E1FE2782100125AEA /* UIDevice+Extension.swift in Sources */,
 				E3879A861FE278D200125AEA /* StringExtension.swift in Sources */,
 				E3879A511FE22A2F00125AEA /* DispatchQueueExtension.swift in Sources */,
+				E3879A9A1FE3A6AF00125AEA /* LLCollectionViewAlignedLayout.swift in Sources */,
 				E3879A951FE3973600125AEA /* MBProgressHUDTool.swift in Sources */,
 				E3879A751FE26A3F00125AEA /* LLBaseCollectionViewCell.swift in Sources */,
+				E3879AA81FE3ACF300125AEA /* LLBoardCCell.swift in Sources */,
 				E3879A5F1FE24CB500125AEA /* LLSubscibeListViewController.swift in Sources */,
 				E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */,
+				E3879AAE1FE3AF1A00125AEA /* LLEmptyDataSet.swift in Sources */,
 				E3879A591FE249E700125AEA /* LLTabBarController.swift in Sources */,
+				E3879AA21FE3AC0F00125AEA /* LLComicCHeadView.swift in Sources */,
+				E3879AA61FE3ACBC00125AEA /* LLComicCCell.swift in Sources */,
 				E3879A4D1FE2295A00125AEA /* UIBarButtonItemExtension.swift in Sources */,
 				E3879A731FE269ED00125AEA /* LLBaseTableViewHeaderFooterView.swift in Sources */,
 				E3879A7C1FE2772900125AEA /* ApiTool.swift in Sources */,
@@ -583,8 +637,10 @@
 				E3879A651FE24CF800125AEA /* LLBookViewController.swift in Sources */,
 				E3879A801FE2785000125AEA /* ArrayExtensions.swift in Sources */,
 				E3879A571FE248FC00125AEA /* LLWebViewController.swift in Sources */,
+				E3879AA41FE3AC8B00125AEA /* LLComicCFootView.swift in Sources */,
 				E3879A6B1FE24ECE00125AEA /* LLNoticeBar.swift in Sources */,
 				E3879A4B1FE2146F00125AEA /* UIColorExtension.swift in Sources */,
+				E3879AAB1FE3ADEE00125AEA /* LLRefresh.swift in Sources */,
 				E3879A701FE2537D00125AEA /* LLSearchViewController.swift in Sources */,
 				E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */,
 				E3879A791FE26A9D00125AEA /* LLBaseCollectionReusableView.swift in Sources */,
