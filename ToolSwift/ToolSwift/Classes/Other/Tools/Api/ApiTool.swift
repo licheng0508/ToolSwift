@@ -11,13 +11,13 @@ import HandyJSON
 import MBProgressHUD
 
 let LoadingPlugin = NetworkActivityPlugin { (type) in
-    guard let vc = topVC else { return }
+    
     switch type {
     case .began:
-        MBProgressHUD.hide(for: vc.view, animated: false)
-        MBProgressHUD.showAdded(to: vc.view, animated: true)
+        LLNetWorkLoadingTool.sharedInstance.loadingStopAnimation()
+        LLNetWorkLoadingTool.sharedInstance.loadingStarAnimation()
     case .ended:
-        MBProgressHUD.hide(for: vc.view, animated: true)
+        LLNetWorkLoadingTool.sharedInstance.loadingStopAnimation()
     }
 }
 
@@ -34,6 +34,11 @@ let timeoutClosure = {(endpoint: Endpoint<ApiTool>, closure: MoyaProvider<ApiToo
 
 let ApiProvider = MoyaProvider<ApiTool>(requestClosure: timeoutClosure)
 let ApiLoadingProvider = MoyaProvider<ApiTool>(requestClosure: timeoutClosure, plugins: [LoadingPlugin])
+
+/// 获取接口的方法
+func ApiToolProvider(_ showloading: Bool = false) -> MoyaProvider<ApiTool> {
+    return showloading ? ApiLoadingProvider : ApiProvider
+}
 
 enum ApiTool {
     

@@ -40,6 +40,9 @@
 		E3879A881FE278EE00125AEA /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A871FE278EE00125AEA /* DictionaryExtension.swift */; };
 		E3879A8A1FE27A0100125AEA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A891FE27A0100125AEA /* ResponseModel.swift */; };
 		E3879A8E1FE36C1C00125AEA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A8D1FE36C1C00125AEA /* Common.swift */; };
+		E3879A941FE3973600125AEA /* LLNetWorkLoadingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A921FE3973600125AEA /* LLNetWorkLoadingTool.swift */; };
+		E3879A951FE3973600125AEA /* MBProgressHUDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A931FE3973600125AEA /* MBProgressHUDTool.swift */; };
+		E3879A971FE39FF500125AEA /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3879A961FE39FF500125AEA /* CALayerExtension.swift */; };
 		E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C17781FC2C1370023F134 /* AppDelegate.swift */; };
 		E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C17AA1FC2C2360023F134 /* LLIndexViewController.swift */; };
 		E39C17AF1FC2C2F80023F134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39C17AE1FC2C2F80023F134 /* Launch Screen.storyboard */; };
@@ -82,6 +85,9 @@
 		E3879A871FE278EE00125AEA /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		E3879A891FE27A0100125AEA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		E3879A8D1FE36C1C00125AEA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		E3879A921FE3973600125AEA /* LLNetWorkLoadingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLNetWorkLoadingTool.swift; sourceTree = "<group>"; };
+		E3879A931FE3973600125AEA /* MBProgressHUDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDTool.swift; sourceTree = "<group>"; };
+		E3879A961FE39FF500125AEA /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		E39C17751FC2C1370023F134 /* ToolSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39C17781FC2C1370023F134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39C17841FC2C1370023F134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,6 +294,7 @@
 				E3879A831FE278A300125AEA /* UIImageExtensions.swift */,
 				E3879A851FE278D200125AEA /* StringExtension.swift */,
 				E3879A871FE278EE00125AEA /* DictionaryExtension.swift */,
+				E3879A961FE39FF500125AEA /* CALayerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -331,6 +338,8 @@
 		E3879A911FE3809400125AEA /* NetWorkLoading */ = {
 			isa = PBXGroup;
 			children = (
+				E3879A921FE3973600125AEA /* LLNetWorkLoadingTool.swift */,
+				E3879A931FE3973600125AEA /* MBProgressHUDTool.swift */,
 			);
 			path = NetWorkLoading;
 			sourceTree = "<group>";
@@ -558,6 +567,7 @@
 				E3879A7E1FE2782100125AEA /* UIDevice+Extension.swift in Sources */,
 				E3879A861FE278D200125AEA /* StringExtension.swift in Sources */,
 				E3879A511FE22A2F00125AEA /* DispatchQueueExtension.swift in Sources */,
+				E3879A951FE3973600125AEA /* MBProgressHUDTool.swift in Sources */,
 				E3879A751FE26A3F00125AEA /* LLBaseCollectionViewCell.swift in Sources */,
 				E3879A5F1FE24CB500125AEA /* LLSubscibeListViewController.swift in Sources */,
 				E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */,
@@ -585,6 +595,8 @@
 				E3879A4F1FE229EB00125AEA /* UIBarButtonItemFixSpace.swift in Sources */,
 				E3879A5B1FE24C8300125AEA /* LLBoutiqueListViewController.swift in Sources */,
 				E3879A771FE26A6A00125AEA /* LLBaseTableViewCell.swift in Sources */,
+				E3879A971FE39FF500125AEA /* CALayerExtension.swift in Sources */,
+				E3879A941FE3973600125AEA /* LLNetWorkLoadingTool.swift in Sources */,
 				E3879A551FE22F4100125AEA /* LLPageViewController.swift in Sources */,
 				E3879A841FE278A300125AEA /* UIImageExtensions.swift in Sources */,
 			);

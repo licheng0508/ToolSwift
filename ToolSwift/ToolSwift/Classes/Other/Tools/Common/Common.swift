@@ -15,3 +15,6 @@ let BASE_URL = "http://app.u17.com"
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
+/// 提示框显示时间秒
+let HUD_SHOW_TEXT_SECOND = 2.0
+

@@ -19,11 +19,11 @@ class LLBoutiqueListViewController: LLBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadData()
+        loadData(showloading: true)
     }
     
     /// 获取数据
-    private func loadData(_ changeSex: Bool = false){
+    private func loadData(_ changeSex: Bool = false, showloading: Bool){
     
         if changeSex {
             sexType = 3 - sexType
@@ -32,13 +32,11 @@ class LLBoutiqueListViewController: LLBaseViewController {
             NotificationCenter.default.post(name: .USexTypeDidChange, object: nil)
         }
         
-        ApiLoadingProvider.request(ApiTool.boutiqueList(sexType: sexType), model: BoutiqueListModel.self) { [weak self] (returnData) in
+        ApiToolProvider(showloading).request(ApiTool.boutiqueList(sexType: sexType), model: BoutiqueListModel.self) { [weak self] (returnData) in
             
             self?.galleryItems = returnData?.galleryItems ?? []
             self?.TextItems = returnData?.textItems ?? []
             self?.comicLists = returnData?.comicLists ?? []
-            
         }
-        
     }
 }
