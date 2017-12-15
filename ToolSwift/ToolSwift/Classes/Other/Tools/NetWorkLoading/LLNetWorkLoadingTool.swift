@@ -17,7 +17,7 @@ class LLNetWorkLoadingTool: UIViewController, NVActivityIndicatorViewable {
     /// 开始加载
     func loadingStarAnimation() {
 
-        startAnimating(CGSize(width: 40, height: 40), type: NVActivityIndicatorType.lineScale, color: UIColor.darkGray, backgroundColor: UIColor.clear)
+        startAnimating(CGSize(width: 30, height: 30), type: NVActivityIndicatorType.lineScale, color: UIColor.darkGray, backgroundColor: UIColor.clear)
 
     }
 
