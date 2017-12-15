@@ -328,6 +328,13 @@
 			path = NoticeBar;
 			sourceTree = "<group>";
 		};
+		E3879A911FE3809400125AEA /* NetWorkLoading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWorkLoading;
+			sourceTree = "<group>";
+		};
 		E39C176C1FC2C1370023F134 = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				E3879A8F1FE36C4200125AEA /* Api */,
+				E3879A911FE3809400125AEA /* NetWorkLoading */,
 				E3879A8B1FE36BD900125AEA /* Common */,
 				E3879A901FE36C5900125AEA /* NoticeBar */,
 			);
@@ -476,6 +484,7 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -493,6 +502,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
