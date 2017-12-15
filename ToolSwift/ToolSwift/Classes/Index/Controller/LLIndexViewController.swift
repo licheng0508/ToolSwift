@@ -15,9 +15,15 @@ class LLIndexViewController: LLPageViewController {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func configNavigationBar() {
+        super.configNavigationBar()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"),
+                                                            target: self,
+                                                            action: #selector(selectAction))
+    }
+    
+    @objc private func selectAction() {
+        navigationController?.pushViewController(LLSearchViewController(), animated: true)
     }
 }
 

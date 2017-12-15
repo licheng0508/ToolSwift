@@ -28,6 +28,29 @@ extension String {
     static let sexTypeKey = "sexTypeKey"
 }
 
+extension NSNotification.Name {
+    static let USexTypeDidChange = NSNotification.Name("USexTypeDidChange")
+}
+
+var topVC: UIViewController? {
+    var resultVC: UIViewController?
+    resultVC = _topVC(UIApplication.shared.keyWindow?.rootViewController)
+    while resultVC?.presentedViewController != nil {
+        resultVC = _topVC(resultVC?.presentedViewController)
+    }
+    return resultVC
+}
+
+private  func _topVC(_ vc: UIViewController?) -> UIViewController? {
+    if vc is UINavigationController {
+        return _topVC((vc as? UINavigationController)?.topViewController)
+    } else if vc is UITabBarController {
+        return _topVC((vc as? UITabBarController)?.selectedViewController)
+    } else {
+        return vc
+    }
+}
+
 //MARK: swizzledMethod
 extension NSObject {
     
@@ -50,6 +73,27 @@ extension NSObject {
     }
 }
 
+//MARK: Kingfisher
+extension Kingfisher where Base: ImageView {
+    @discardableResult
+    public func setImage(urlString: String?, placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> RetrieveImageTask {
+        return setImage(with: URL(string: urlString ?? ""),
+                        placeholder: placeholder,
+                        options:[.transition(.fade(0.5))])
+    }
+}
+
+extension Kingfisher where Base: UIButton {
+    @discardableResult
+    public func setImage(urlString: String?, for state: UIControlState, placeholder: UIImage? = UIImage(named: "normal_placeholder_h")) -> RetrieveImageTask {
+        return setImage(with: URL(string: urlString ?? ""),
+                        for: state,
+                        placeholder: placeholder,
+                        options: [.transition(.fade(0.5))])
+        
+    }
+}
+
 //MARK: SnapKit
 extension ConstraintView {
     
@@ -62,6 +106,34 @@ extension ConstraintView {
     }
 }
 
+//MARK: UICollectionView
+extension UICollectionView {
+    
+    func reloadData(animation: Bool = true) {
+        if animation {
+            reloadData()
+        } else {
+            UIView .performWithoutAnimation {
+                reloadData()
+            }
+        }
+    }
+}
+
+extension UIApplication {
+    
+    private static let u_initialize: Void = {
+        UINavigationController.u_initialize
+        if #available(iOS 11.0, *) {
+            UINavigationBar.u_initialize
+        }
+    }()
+    
+    open override var next: UIResponder? {
+        UIApplication.u_initialize
+        return super.next
+    }
+}
 
 /// 自定义LOG的目的:
 /// 在开发阶段自动显示LOG
