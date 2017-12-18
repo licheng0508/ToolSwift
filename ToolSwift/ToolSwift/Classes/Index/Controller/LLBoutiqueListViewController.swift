@@ -22,7 +22,7 @@ class LLBoutiqueListViewController: LLBaseViewController {
         bw.autoScrollTimeInterval = 5
         bw.placeHolderImage = UIImage(named: "normal_placeholder")
         bw.coverImage = UIImage()
-        bw.pageControlPosition = .right
+        bw.pageControlPosition = .center
         bw.pageControlBottom = 20
         bw.titleBackgroundColor = UIColor.clear
         bw.lldidSelectItemAtIndex = didSelectBanner(index:)
