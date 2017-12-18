@@ -58,6 +58,7 @@
 		E3AA8F1B1FE798CA0072F9B0 /* LLComicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1A1FE798CA0072F9B0 /* LLComicListViewController.swift */; };
 		E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */; };
 		E3AA8F1F1FE79AF10072F9B0 /* LLSpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */; };
+		E3AA8F211FE7B1BD0072F9B0 /* LLRankTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F201FE7B1BD0072F9B0 /* LLRankTCell.swift */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		E3AA8F1A1FE798CA0072F9B0 /* LLComicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicListViewController.swift; sourceTree = "<group>"; };
 		E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLUpdateListViewController.swift; sourceTree = "<group>"; };
 		E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSpecialViewController.swift; sourceTree = "<group>"; };
+		E3AA8F201FE7B1BD0072F9B0 /* LLRankTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLRankTCell.swift; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				E3879AA31FE3AC8B00125AEA /* LLComicCFootView.swift */,
 				E3879AA51FE3ACBC00125AEA /* LLComicCCell.swift */,
 				E3879AA71FE3ACF300125AEA /* LLBoardCCell.swift */,
+				E3AA8F201FE7B1BD0072F9B0 /* LLRankTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				E3879AA81FE3ACF300125AEA /* LLBoardCCell.swift in Sources */,
 				E3879A5F1FE24CB500125AEA /* LLSubscibeListViewController.swift in Sources */,
 				E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */,
+				E3AA8F211FE7B1BD0072F9B0 /* LLRankTCell.swift in Sources */,
 				E3879AAE1FE3AF1A00125AEA /* LLEmptyDataSet.swift in Sources */,
 				E3879A591FE249E700125AEA /* LLTabBarController.swift in Sources */,
 				E3879AA21FE3AC0F00125AEA /* LLComicCHeadView.swift in Sources */,
