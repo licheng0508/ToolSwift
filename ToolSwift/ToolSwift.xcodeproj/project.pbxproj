@@ -54,6 +54,10 @@
 		E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C17781FC2C1370023F134 /* AppDelegate.swift */; };
 		E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C17AA1FC2C2360023F134 /* LLIndexViewController.swift */; };
 		E39C17AF1FC2C2F80023F134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39C17AE1FC2C2F80023F134 /* Launch Screen.storyboard */; };
+		E3AA8F191FE796F60072F9B0 /* LLComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F181FE796F60072F9B0 /* LLComicViewController.swift */; };
+		E3AA8F1B1FE798CA0072F9B0 /* LLComicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1A1FE798CA0072F9B0 /* LLComicListViewController.swift */; };
+		E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */; };
+		E3AA8F1F1FE79AF10072F9B0 /* LLSpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +113,10 @@
 		E39C17841FC2C1370023F134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E39C17AA1FC2C2360023F134 /* LLIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLIndexViewController.swift; sourceTree = "<group>"; };
 		E39C17AE1FC2C2F80023F134 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E3AA8F181FE796F60072F9B0 /* LLComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicViewController.swift; sourceTree = "<group>"; };
+		E3AA8F1A1FE798CA0072F9B0 /* LLComicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicListViewController.swift; sourceTree = "<group>"; };
+		E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLUpdateListViewController.swift; sourceTree = "<group>"; };
+		E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSpecialViewController.swift; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +168,8 @@
 				E3879A5C1FE24C9A00125AEA /* LLVIPListViewController.swift */,
 				E3879A5E1FE24CB500125AEA /* LLSubscibeListViewController.swift */,
 				E3879A601FE24CC600125AEA /* LLRankListViewController.swift */,
+				E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */,
+				E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -425,6 +435,7 @@
 				E3879A3B1FE2106400125AEA /* Book */,
 				E3879A431FE2106500125AEA /* Cate */,
 				E3879A331FE2106400125AEA /* Mine */,
+				E3AA8F151FE795CB0072F9B0 /* Comic */,
 				E3879A3F1FE2106500125AEA /* Search */,
 				E3879A311FE11D7800125AEA /* Other */,
 			);
@@ -452,6 +463,31 @@
 				E3879A981FE3A67E00125AEA /* CollectionViewLayout */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		E3AA8F151FE795CB0072F9B0 /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA8F171FE796D90072F9B0 /* View */,
+				E3AA8F161FE796CD0072F9B0 /* Controller */,
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		E3AA8F161FE796CD0072F9B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA8F181FE796F60072F9B0 /* LLComicViewController.swift */,
+				E3AA8F1A1FE798CA0072F9B0 /* LLComicListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3AA8F171FE796D90072F9B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,7 +662,9 @@
 				E3879A591FE249E700125AEA /* LLTabBarController.swift in Sources */,
 				E3879AA21FE3AC0F00125AEA /* LLComicCHeadView.swift in Sources */,
 				E3879AA61FE3ACBC00125AEA /* LLComicCCell.swift in Sources */,
+				E3AA8F1B1FE798CA0072F9B0 /* LLComicListViewController.swift in Sources */,
 				E3879A4D1FE2295A00125AEA /* UIBarButtonItemExtension.swift in Sources */,
+				E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */,
 				E3879A731FE269ED00125AEA /* LLBaseTableViewHeaderFooterView.swift in Sources */,
 				E3879A7C1FE2772900125AEA /* ApiTool.swift in Sources */,
 				E3879A8E1FE36C1C00125AEA /* Common.swift in Sources */,
@@ -642,12 +680,14 @@
 				E3879A4B1FE2146F00125AEA /* UIColorExtension.swift in Sources */,
 				E3879AAB1FE3ADEE00125AEA /* LLRefresh.swift in Sources */,
 				E3879A701FE2537D00125AEA /* LLSearchViewController.swift in Sources */,
+				E3AA8F191FE796F60072F9B0 /* LLComicViewController.swift in Sources */,
 				E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */,
 				E3879A791FE26A9D00125AEA /* LLBaseCollectionReusableView.swift in Sources */,
 				E3879A481FE211B400125AEA /* LLBaseViewController.swift in Sources */,
 				E3879A671FE24D1200125AEA /* LLMineViewController.swift in Sources */,
 				E3879A631FE24CE300125AEA /* LLCateListViewController.swift in Sources */,
 				E3879A881FE278EE00125AEA /* DictionaryExtension.swift in Sources */,
+				E3AA8F1F1FE79AF10072F9B0 /* LLSpecialViewController.swift in Sources */,
 				E3879A4F1FE229EB00125AEA /* UIBarButtonItemFixSpace.swift in Sources */,
 				E3879A5B1FE24C8300125AEA /* LLBoutiqueListViewController.swift in Sources */,
 				E3879A771FE26A6A00125AEA /* LLBaseTableViewCell.swift in Sources */,

@@ -118,9 +118,8 @@ class LLBoutiqueListViewController: LLBaseViewController {
         } else {
             guard let comicIdString = item.ext?.flatMap({ return $0.key == "comicId" ? $0.val : nil }).joined(),
                 let comicId = Int(comicIdString) else { return }
-//            let vc = UComicViewController(comicid: comicId)
-//            navigationController?.pushViewController(vc, animated: true)
-            LLPrint(comicId)
+            let vc = LLComicViewController(comicid: comicId)
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
     
@@ -152,28 +151,28 @@ extension LLBoutiqueListViewController: LLCollectionViewSectionBackgroundLayoutD
             head.titleLabel.text = comicList.itemTitle
             head.moreActionClosure { [weak self] in
                 if comicList.comicType == .thematic {
-//                    let vc = UPageViewController(titles: ["漫画",
-//                                                          "次元"],
-//                                                 vcs: [USpecialViewController(argCon: 2),
-//                                                       USpecialViewController(argCon: 4)],
-//                                                 pageStyle: .navgationBarSegment)
-//                    self?.navigationController?.pushViewController(vc, animated: true)
+                    let vc = LLPageViewController(titles: ["漫画",
+                                                          "次元"],
+                                                 vcs: [LLSpecialViewController(argCon: 2),
+                                                       LLSpecialViewController(argCon: 4)],
+                                                 pageStyle: .navgationBarSegment)
+                    self?.navigationController?.pushViewController(vc, animated: true)
                 } else if comicList.comicType == .animation {
                     let vc = LLWebViewController(url: "http://m.u17.com/wap/cartoon/list")
                     vc.title = "动画"
                     self?.navigationController?.pushViewController(vc, animated: true)
                 } else if comicList.comicType == .update {
-//                    let vc = UUpdateListViewController(argCon: comicList.argCon,
-//                                                       argName: comicList.argName,
-//                                                       argValue: comicList.argValue)
-//                    vc.title = comicList.itemTitle
-//                    self?.navigationController?.pushViewController(vc, animated: true)
+                    let vc = LLUpdateListViewController(argCon: comicList.argCon,
+                                                       argName: comicList.argName,
+                                                       argValue: comicList.argValue)
+                    vc.title = comicList.itemTitle
+                    self?.navigationController?.pushViewController(vc, animated: true)
                 } else {
-//                    let vc = UComicListViewController(argCon: comicList.argCon,
-//                                                      argName: comicList.argName,
-//                                                      argValue: comicList.argValue)
-//                    vc.title = comicList.itemTitle
-//                    self?.navigationController?.pushViewController(vc, animated: true)
+                    let vc = LLComicListViewController(argCon: comicList.argCon,
+                                                      argName: comicList.argName,
+                                                      argValue: comicList.argValue)
+                    vc.title = comicList.itemTitle
+                    self?.navigationController?.pushViewController(vc, animated: true)
                 }
             }
             return head
@@ -236,18 +235,18 @@ extension LLBoutiqueListViewController: LLCollectionViewSectionBackgroundLayoutD
         guard let item = comicList.comics?[indexPath.row] else { return }
         
         if comicList.comicType == .billboard {
-//            let vc = UComicListViewController(argName: item.argName,
-//                                              argValue: item.argValue)
-//            vc.title = item.name
-//            navigationController?.pushViewController(vc, animated: true)
+            let vc = LLComicListViewController(argName: item.argName,
+                                              argValue: item.argValue)
+            vc.title = item.name
+            navigationController?.pushViewController(vc, animated: true)
         } else {
             if item.linkType == 2 {
                 guard let url = item.ext?.flatMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
                 let vc = LLWebViewController(url: url)
                 navigationController?.pushViewController(vc, animated: true)
             } else {
-//                let vc = UComicViewController(comicid: item.comicId)
-//                navigationController?.pushViewController(vc, animated: true)
+                let vc = LLComicViewController(comicid: item.comicId)
+                navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
