@@ -81,6 +81,7 @@
 		E3AA8F4C1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4A1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift */; };
 		E3AA8F4D1FE8FE380072F9B0 /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */; };
 		E3AA8F4F1FE8FFA90072F9B0 /* LLCommentTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */; };
+		E3AA8F511FE907FE0072F9B0 /* LLComicTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +164,7 @@
 		E3AA8F4A1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintArray+Extensions.swift"; sourceTree = "<group>"; };
 		E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
 		E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCommentTCell.swift; sourceTree = "<group>"; };
+		E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicTCell.swift; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -552,6 +554,7 @@
 				E3AA8F451FE8FD970072F9B0 /* LLReadTopBar.swift */,
 				E3AA8F471FE8FDC40072F9B0 /* LLReadBottomBar.swift */,
 				E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */,
+				E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -782,6 +785,7 @@
 				E3AA8F191FE796F60072F9B0 /* LLComicViewController.swift in Sources */,
 				E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */,
 				E3879A791FE26A9D00125AEA /* LLBaseCollectionReusableView.swift in Sources */,
+				E3AA8F511FE907FE0072F9B0 /* LLComicTCell.swift in Sources */,
 				E3879A481FE211B400125AEA /* LLBaseViewController.swift in Sources */,
 				E3879A671FE24D1200125AEA /* LLMineViewController.swift in Sources */,
 				E3AA8F271FE8E2CB0072F9B0 /* LLCommentViewController.swift in Sources */,

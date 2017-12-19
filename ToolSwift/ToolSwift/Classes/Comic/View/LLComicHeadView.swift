@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class LLComicHeadCCell: LLBaseCollectionViewCell {
     
     lazy var titleLabel: UILabel = {

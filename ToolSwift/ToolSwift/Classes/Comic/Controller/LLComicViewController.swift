@@ -66,17 +66,21 @@ class LLComicViewController: LLBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         edgesForExtendedLayout = .top
+        
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
         UIApplication.changeOrientationTo(landscapeRight: false)
-        loadData()
     }
     
     
     private func loadData() {
+        
+        //加载动画
+        LLNetWorkLoadingTool.sharedInstance.loadingStarAnimation()
         
         let grpup = DispatchGroup()
         
@@ -119,6 +123,8 @@ class LLComicViewController: LLBaseViewController {
         }
         
         grpup.notify(queue: DispatchQueue.main) {
+            //结束动画
+            LLNetWorkLoadingTool.sharedInstance.loadingStopAnimation()
             self.detailVC.reloadData()
             self.chapterVC.reloadData()
             self.commentVC.reloadData()
