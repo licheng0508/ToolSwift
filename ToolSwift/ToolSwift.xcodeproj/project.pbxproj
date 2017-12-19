@@ -59,6 +59,28 @@
 		E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */; };
 		E3AA8F1F1FE79AF10072F9B0 /* LLSpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */; };
 		E3AA8F211FE7B1BD0072F9B0 /* LLRankTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F201FE7B1BD0072F9B0 /* LLRankTCell.swift */; };
+		E3AA8F231FE8E2350072F9B0 /* LLDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F221FE8E2350072F9B0 /* LLDetailViewController.swift */; };
+		E3AA8F251FE8E25A0072F9B0 /* LLChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F241FE8E25A0072F9B0 /* LLChapterViewController.swift */; };
+		E3AA8F271FE8E2CB0072F9B0 /* LLCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F261FE8E2CB0072F9B0 /* LLCommentViewController.swift */; };
+		E3AA8F291FE8E3FB0072F9B0 /* LLComicHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F281FE8E3FB0072F9B0 /* LLComicHeadView.swift */; };
+		E3AA8F2E1FE8EA650072F9B0 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F2B1FE8EA650072F9B0 /* ParallaxHeaderMode.swift */; };
+		E3AA8F2F1FE8EA650072F9B0 /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F2C1FE8EA650072F9B0 /* UIScrollView+ParallaxHeader.swift */; };
+		E3AA8F301FE8EA650072F9B0 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F2D1FE8EA650072F9B0 /* ParallaxHeader.swift */; };
+		E3AA8F321FE8ED970072F9B0 /* LLDescriptionTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F311FE8ED970072F9B0 /* LLDescriptionTCell.swift */; };
+		E3AA8F341FE8EDC30072F9B0 /* LLOtherWorksTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F331FE8EDC30072F9B0 /* LLOtherWorksTCell.swift */; };
+		E3AA8F361FE8EDEA0072F9B0 /* LLTicketTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F351FE8EDEA0072F9B0 /* LLTicketTCell.swift */; };
+		E3AA8F381FE8EE120072F9B0 /* LLGuessLikeTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F371FE8EE120072F9B0 /* LLGuessLikeTCell.swift */; };
+		E3AA8F3A1FE8EEA00072F9B0 /* LLOtherWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F391FE8EEA00072F9B0 /* LLOtherWorksViewController.swift */; };
+		E3AA8F3C1FE8EEF30072F9B0 /* LLOtherWorksCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F3B1FE8EEF30072F9B0 /* LLOtherWorksCCell.swift */; };
+		E3AA8F3E1FE8F0680072F9B0 /* LLChapterCHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F3D1FE8F0680072F9B0 /* LLChapterCHeadView.swift */; };
+		E3AA8F401FE8F0C30072F9B0 /* LLChapterCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F3F1FE8F0C30072F9B0 /* LLChapterCCell.swift */; };
+		E3AA8F421FE8FC470072F9B0 /* LLReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F411FE8FC470072F9B0 /* LLReadViewController.swift */; };
+		E3AA8F441FE8FD1F0072F9B0 /* LLReadCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F431FE8FD1F0072F9B0 /* LLReadCCell.swift */; };
+		E3AA8F461FE8FD970072F9B0 /* LLReadTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F451FE8FD970072F9B0 /* LLReadTopBar.swift */; };
+		E3AA8F481FE8FDC40072F9B0 /* LLReadBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F471FE8FDC40072F9B0 /* LLReadBottomBar.swift */; };
+		E3AA8F4C1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4A1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift */; };
+		E3AA8F4D1FE8FE380072F9B0 /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */; };
+		E3AA8F4F1FE8FFA90072F9B0 /* LLCommentTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +141,28 @@
 		E3AA8F1C1FE79AA10072F9B0 /* LLUpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLUpdateListViewController.swift; sourceTree = "<group>"; };
 		E3AA8F1E1FE79AF10072F9B0 /* LLSpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSpecialViewController.swift; sourceTree = "<group>"; };
 		E3AA8F201FE7B1BD0072F9B0 /* LLRankTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLRankTCell.swift; sourceTree = "<group>"; };
+		E3AA8F221FE8E2350072F9B0 /* LLDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDetailViewController.swift; sourceTree = "<group>"; };
+		E3AA8F241FE8E25A0072F9B0 /* LLChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLChapterViewController.swift; sourceTree = "<group>"; };
+		E3AA8F261FE8E2CB0072F9B0 /* LLCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCommentViewController.swift; sourceTree = "<group>"; };
+		E3AA8F281FE8E3FB0072F9B0 /* LLComicHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicHeadView.swift; sourceTree = "<group>"; };
+		E3AA8F2B1FE8EA650072F9B0 /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		E3AA8F2C1FE8EA650072F9B0 /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		E3AA8F2D1FE8EA650072F9B0 /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		E3AA8F311FE8ED970072F9B0 /* LLDescriptionTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDescriptionTCell.swift; sourceTree = "<group>"; };
+		E3AA8F331FE8EDC30072F9B0 /* LLOtherWorksTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLOtherWorksTCell.swift; sourceTree = "<group>"; };
+		E3AA8F351FE8EDEA0072F9B0 /* LLTicketTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTicketTCell.swift; sourceTree = "<group>"; };
+		E3AA8F371FE8EE120072F9B0 /* LLGuessLikeTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLGuessLikeTCell.swift; sourceTree = "<group>"; };
+		E3AA8F391FE8EEA00072F9B0 /* LLOtherWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLOtherWorksViewController.swift; sourceTree = "<group>"; };
+		E3AA8F3B1FE8EEF30072F9B0 /* LLOtherWorksCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLOtherWorksCCell.swift; sourceTree = "<group>"; };
+		E3AA8F3D1FE8F0680072F9B0 /* LLChapterCHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLChapterCHeadView.swift; sourceTree = "<group>"; };
+		E3AA8F3F1FE8F0C30072F9B0 /* LLChapterCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLChapterCCell.swift; sourceTree = "<group>"; };
+		E3AA8F411FE8FC470072F9B0 /* LLReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLReadViewController.swift; sourceTree = "<group>"; };
+		E3AA8F431FE8FD1F0072F9B0 /* LLReadCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLReadCCell.swift; sourceTree = "<group>"; };
+		E3AA8F451FE8FD970072F9B0 /* LLReadTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLReadTopBar.swift; sourceTree = "<group>"; };
+		E3AA8F471FE8FDC40072F9B0 /* LLReadBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLReadBottomBar.swift; sourceTree = "<group>"; };
+		E3AA8F4A1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintArray+Extensions.swift"; sourceTree = "<group>"; };
+		E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
+		E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCommentTCell.swift; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -464,6 +508,8 @@
 				E3879AA91FE3ADAC00125AEA /* LLRefresh */,
 				E3879AAC1FE3AEF800125AEA /* EmptyDataSet */,
 				E3879A981FE3A67E00125AEA /* CollectionViewLayout */,
+				E3AA8F2A1FE8EA650072F9B0 /* ParallaxHeader */,
+				E3AA8F491FE8FE380072F9B0 /* SnapKitExtension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -482,6 +528,11 @@
 			children = (
 				E3AA8F181FE796F60072F9B0 /* LLComicViewController.swift */,
 				E3AA8F1A1FE798CA0072F9B0 /* LLComicListViewController.swift */,
+				E3AA8F221FE8E2350072F9B0 /* LLDetailViewController.swift */,
+				E3AA8F241FE8E25A0072F9B0 /* LLChapterViewController.swift */,
+				E3AA8F261FE8E2CB0072F9B0 /* LLCommentViewController.swift */,
+				E3AA8F391FE8EEA00072F9B0 /* LLOtherWorksViewController.swift */,
+				E3AA8F411FE8FC470072F9B0 /* LLReadViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -489,8 +540,39 @@
 		E3AA8F171FE796D90072F9B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA8F281FE8E3FB0072F9B0 /* LLComicHeadView.swift */,
+				E3AA8F311FE8ED970072F9B0 /* LLDescriptionTCell.swift */,
+				E3AA8F331FE8EDC30072F9B0 /* LLOtherWorksTCell.swift */,
+				E3AA8F351FE8EDEA0072F9B0 /* LLTicketTCell.swift */,
+				E3AA8F371FE8EE120072F9B0 /* LLGuessLikeTCell.swift */,
+				E3AA8F3B1FE8EEF30072F9B0 /* LLOtherWorksCCell.swift */,
+				E3AA8F3D1FE8F0680072F9B0 /* LLChapterCHeadView.swift */,
+				E3AA8F3F1FE8F0C30072F9B0 /* LLChapterCCell.swift */,
+				E3AA8F431FE8FD1F0072F9B0 /* LLReadCCell.swift */,
+				E3AA8F451FE8FD970072F9B0 /* LLReadTopBar.swift */,
+				E3AA8F471FE8FDC40072F9B0 /* LLReadBottomBar.swift */,
+				E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E3AA8F2A1FE8EA650072F9B0 /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA8F2B1FE8EA650072F9B0 /* ParallaxHeaderMode.swift */,
+				E3AA8F2C1FE8EA650072F9B0 /* UIScrollView+ParallaxHeader.swift */,
+				E3AA8F2D1FE8EA650072F9B0 /* ParallaxHeader.swift */,
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		E3AA8F491FE8FE380072F9B0 /* SnapKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA8F4A1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift */,
+				E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */,
+			);
+			path = SnapKitExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,12 +731,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AA8F291FE8E3FB0072F9B0 /* LLComicHeadView.swift in Sources */,
 				E3879AA01FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				E3879A821FE2787C00125AEA /* UIViewExtension.swift in Sources */,
+				E3AA8F381FE8EE120072F9B0 /* LLGuessLikeTCell.swift in Sources */,
 				E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */,
+				E3AA8F481FE8FDC40072F9B0 /* LLReadBottomBar.swift in Sources */,
+				E3AA8F4F1FE8FFA90072F9B0 /* LLCommentTCell.swift in Sources */,
 				E3879A7E1FE2782100125AEA /* UIDevice+Extension.swift in Sources */,
 				E3879A861FE278D200125AEA /* StringExtension.swift in Sources */,
+				E3AA8F4C1FE8FE380072F9B0 /* ConstraintArray+Extensions.swift in Sources */,
+				E3AA8F4D1FE8FE380072F9B0 /* ConstraintArrayDSL.swift in Sources */,
 				E3879A511FE22A2F00125AEA /* DispatchQueueExtension.swift in Sources */,
+				E3AA8F251FE8E25A0072F9B0 /* LLChapterViewController.swift in Sources */,
 				E3879A9A1FE3A6AF00125AEA /* LLCollectionViewAlignedLayout.swift in Sources */,
 				E3879A951FE3973600125AEA /* MBProgressHUDTool.swift in Sources */,
 				E3879A751FE26A3F00125AEA /* LLBaseCollectionViewCell.swift in Sources */,
@@ -671,34 +760,49 @@
 				E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */,
 				E3879A731FE269ED00125AEA /* LLBaseTableViewHeaderFooterView.swift in Sources */,
 				E3879A7C1FE2772900125AEA /* ApiTool.swift in Sources */,
+				E3AA8F461FE8FD970072F9B0 /* LLReadTopBar.swift in Sources */,
+				E3AA8F301FE8EA650072F9B0 /* ParallaxHeader.swift in Sources */,
 				E3879A8E1FE36C1C00125AEA /* Common.swift in Sources */,
 				E3879A531FE22BEF00125AEA /* LLNavigationController.swift in Sources */,
 				E3879A8A1FE27A0100125AEA /* ResponseModel.swift in Sources */,
 				E3879A5D1FE24C9A00125AEA /* LLVIPListViewController.swift in Sources */,
 				E3879A611FE24CC600125AEA /* LLRankListViewController.swift in Sources */,
+				E3AA8F401FE8F0C30072F9B0 /* LLChapterCCell.swift in Sources */,
 				E3879A651FE24CF800125AEA /* LLBookViewController.swift in Sources */,
 				E3879A801FE2785000125AEA /* ArrayExtensions.swift in Sources */,
 				E3879A571FE248FC00125AEA /* LLWebViewController.swift in Sources */,
+				E3AA8F3E1FE8F0680072F9B0 /* LLChapterCHeadView.swift in Sources */,
 				E3879AA41FE3AC8B00125AEA /* LLComicCFootView.swift in Sources */,
 				E3879A6B1FE24ECE00125AEA /* LLNoticeBar.swift in Sources */,
 				E3879A4B1FE2146F00125AEA /* UIColorExtension.swift in Sources */,
 				E3879AAB1FE3ADEE00125AEA /* LLRefresh.swift in Sources */,
 				E3879A701FE2537D00125AEA /* LLSearchViewController.swift in Sources */,
+				E3AA8F361FE8EDEA0072F9B0 /* LLTicketTCell.swift in Sources */,
+				E3AA8F441FE8FD1F0072F9B0 /* LLReadCCell.swift in Sources */,
 				E3AA8F191FE796F60072F9B0 /* LLComicViewController.swift in Sources */,
 				E39C17AC1FC2C2360023F134 /* LLIndexViewController.swift in Sources */,
 				E3879A791FE26A9D00125AEA /* LLBaseCollectionReusableView.swift in Sources */,
 				E3879A481FE211B400125AEA /* LLBaseViewController.swift in Sources */,
 				E3879A671FE24D1200125AEA /* LLMineViewController.swift in Sources */,
+				E3AA8F271FE8E2CB0072F9B0 /* LLCommentViewController.swift in Sources */,
 				E3879A631FE24CE300125AEA /* LLCateListViewController.swift in Sources */,
+				E3AA8F3C1FE8EEF30072F9B0 /* LLOtherWorksCCell.swift in Sources */,
 				E3879A881FE278EE00125AEA /* DictionaryExtension.swift in Sources */,
+				E3AA8F341FE8EDC30072F9B0 /* LLOtherWorksTCell.swift in Sources */,
 				E3AA8F1F1FE79AF10072F9B0 /* LLSpecialViewController.swift in Sources */,
 				E3879A4F1FE229EB00125AEA /* UIBarButtonItemFixSpace.swift in Sources */,
 				E3879A5B1FE24C8300125AEA /* LLBoutiqueListViewController.swift in Sources */,
 				E3879A771FE26A6A00125AEA /* LLBaseTableViewCell.swift in Sources */,
+				E3AA8F421FE8FC470072F9B0 /* LLReadViewController.swift in Sources */,
 				E3879A971FE39FF500125AEA /* CALayerExtension.swift in Sources */,
+				E3AA8F321FE8ED970072F9B0 /* LLDescriptionTCell.swift in Sources */,
 				E3879A941FE3973600125AEA /* LLNetWorkLoadingTool.swift in Sources */,
+				E3AA8F3A1FE8EEA00072F9B0 /* LLOtherWorksViewController.swift in Sources */,
+				E3AA8F2E1FE8EA650072F9B0 /* ParallaxHeaderMode.swift in Sources */,
 				E3879A551FE22F4100125AEA /* LLPageViewController.swift in Sources */,
+				E3AA8F231FE8E2350072F9B0 /* LLDetailViewController.swift in Sources */,
 				E3879A841FE278A300125AEA /* UIImageExtensions.swift in Sources */,
+				E3AA8F2F1FE8EA650072F9B0 /* UIScrollView+ParallaxHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
