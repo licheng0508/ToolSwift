@@ -82,6 +82,8 @@
 		E3AA8F4D1FE8FE380072F9B0 /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */; };
 		E3AA8F4F1FE8FFA90072F9B0 /* LLCommentTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */; };
 		E3AA8F511FE907FE0072F9B0 /* LLComicTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */; };
+		E3AA8F531FE910A00072F9B0 /* LLSearchTHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F521FE910A00072F9B0 /* LLSearchTHeadView.swift */; };
+		E3AA8F551FE910FA0072F9B0 /* LLSearchTFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +167,8 @@
 		E3AA8F4B1FE8FE380072F9B0 /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
 		E3AA8F4E1FE8FFA90072F9B0 /* LLCommentTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCommentTCell.swift; sourceTree = "<group>"; };
 		E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicTCell.swift; sourceTree = "<group>"; };
+		E3AA8F521FE910A00072F9B0 /* LLSearchTHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSearchTHeadView.swift; sourceTree = "<group>"; };
+		E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSearchTFootView.swift; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -332,6 +336,8 @@
 		E3879A421FE2106500125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA8F521FE910A00072F9B0 /* LLSearchTHeadView.swift */,
+				E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -763,6 +769,7 @@
 				E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */,
 				E3879A731FE269ED00125AEA /* LLBaseTableViewHeaderFooterView.swift in Sources */,
 				E3879A7C1FE2772900125AEA /* ApiTool.swift in Sources */,
+				E3AA8F551FE910FA0072F9B0 /* LLSearchTFootView.swift in Sources */,
 				E3AA8F461FE8FD970072F9B0 /* LLReadTopBar.swift in Sources */,
 				E3AA8F301FE8EA650072F9B0 /* ParallaxHeader.swift in Sources */,
 				E3879A8E1FE36C1C00125AEA /* Common.swift in Sources */,
@@ -793,6 +800,7 @@
 				E3AA8F3C1FE8EEF30072F9B0 /* LLOtherWorksCCell.swift in Sources */,
 				E3879A881FE278EE00125AEA /* DictionaryExtension.swift in Sources */,
 				E3AA8F341FE8EDC30072F9B0 /* LLOtherWorksTCell.swift in Sources */,
+				E3AA8F531FE910A00072F9B0 /* LLSearchTHeadView.swift in Sources */,
 				E3AA8F1F1FE79AF10072F9B0 /* LLSpecialViewController.swift in Sources */,
 				E3879A4F1FE229EB00125AEA /* UIBarButtonItemFixSpace.swift in Sources */,
 				E3879A5B1FE24C8300125AEA /* LLBoutiqueListViewController.swift in Sources */,
