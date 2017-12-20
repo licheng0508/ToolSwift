@@ -76,15 +76,15 @@ class LLReadViewController: LLBaseViewController {
         cw.delegate = self
         cw.dataSource = self
         cw.register(cellType: LLReadCCell.self)
-        cw.MJHead = LLRefreshAutoHeader {
-            let previousIndex = self.previousIndex
-            self.loadData(with: previousIndex, isPreious: true, needClear: false, finished: { [weak self]  (finish) in
+        cw.MJHead = LLRefreshAutoHeader { [weak self] in
+            let previousIndex = self?.previousIndex ?? 0
+            self?.loadData(with: previousIndex, isPreious: true, needClear: false, finished: { [weak self]  (finish) in
                 self?.previousIndex = previousIndex - 1
             })
         }
-        cw.MJFoot = LLRefreshAutoFooter {
-            let nextIndex = self.nextIndex
-            self.loadData(with: nextIndex, isPreious: false, needClear: false, finished: { [weak self]  (finish) in
+        cw.MJFoot = LLRefreshAutoFooter { [weak self] in
+            let nextIndex = self?.nextIndex ?? 0
+            self?.loadData(with: nextIndex, isPreious: false, needClear: false, finished: { [weak self]  (finish) in
                 self?.nextIndex = nextIndex + 1
             })
         }

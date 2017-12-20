@@ -25,9 +25,9 @@ class LLComicListViewController: LLBaseViewController {
         tw.delegate = self
         tw.dataSource = self
         tw.register(cellType: LLComicTCell.self)
-        tw.MJHead = LLRefreshHeader { self.loadData(more: false) }
-        tw.MJFoot = LLRefreshFooter { self.loadData(more: true) }
-        tw.uempty = LLEmptyView { self.loadData(more: false) }
+        tw.MJHead = LLRefreshHeader { [weak self] in self?.loadData(more: false) }
+        tw.MJFoot = LLRefreshFooter { [weak self] in self?.loadData(more: true) }
+        tw.uempty = LLEmptyView { [weak self] in self?.loadData(more: false) }
         return tw
     }()
     

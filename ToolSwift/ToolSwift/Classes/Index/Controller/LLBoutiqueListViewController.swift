@@ -51,9 +51,9 @@ class LLBoutiqueListViewController: LLBaseViewController {
         cw.register(cellType: LLBoardCCell.self)
         cw.register(supplementaryViewType: LLComicCHeadView.self, ofKind: UICollectionElementKindSectionHeader)
         cw.register(supplementaryViewType: LLComicCFootView.self, ofKind: UICollectionElementKindSectionFooter)
-        cw.MJHead = LLRefreshHeader { self.loadData(showloading: false) }
+        cw.MJHead = LLRefreshHeader { [weak self] in self?.loadData(showloading: false) }
         cw.MJFoot = LLRefreshDiscoverFooter()
-        cw.uempty = LLEmptyView(verticalOffset: -(cw.contentInset.top)) { self.loadData(showloading: true) }
+        cw.uempty = LLEmptyView(verticalOffset: -(cw.contentInset.top)) { [weak self] in self?.loadData(showloading: true) }
         return cw
     }()
     

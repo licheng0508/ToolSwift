@@ -24,9 +24,9 @@ class LLSubscibeListViewController: LLBaseViewController {
         cw.register(cellType: LLComicCCell.self)
         cw.register(supplementaryViewType: LLComicCHeadView.self, ofKind: UICollectionElementKindSectionHeader)
         cw.register(supplementaryViewType: LLComicCFootView.self, ofKind: UICollectionElementKindSectionFooter)
-        cw.MJHead = LLRefreshHeader{ self.loadData() }
+        cw.MJHead = LLRefreshHeader{ [weak self] in self?.loadData() }
         cw.MJFoot = LLRefreshTipKissFooter(with: "使用妖气币可以购买订阅漫画\nVIP会员购买还有优惠哦~")
-        cw.uempty = LLEmptyView { self.loadData() }
+        cw.uempty = LLEmptyView { [weak self] in self?.loadData() }
         return cw
     }()
     

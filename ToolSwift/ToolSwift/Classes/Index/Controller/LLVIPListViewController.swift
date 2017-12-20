@@ -24,9 +24,9 @@ class LLVIPListViewController: LLBaseViewController {
         cw.register(cellType: LLComicCCell.self)
         cw.register(supplementaryViewType: LLComicCHeadView.self, ofKind: UICollectionElementKindSectionHeader)
         cw.register(supplementaryViewType: LLComicCFootView.self, ofKind: UICollectionElementKindSectionFooter)
-        cw.MJHead = LLRefreshHeader{ self.loadData() }
+        cw.MJHead = LLRefreshHeader{ [weak self] in self?.loadData() }
         cw.MJFoot = LLRefreshTipKissFooter(with: "VIP用户专享\nVIP用户可以免费阅读全部漫画哦~")
-        cw.uempty = LLEmptyView { self.loadData() }
+        cw.uempty = LLEmptyView { [weak self] in self?.loadData() }
         return cw
     }()
 
