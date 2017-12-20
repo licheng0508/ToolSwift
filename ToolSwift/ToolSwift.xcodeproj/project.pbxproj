@@ -86,6 +86,10 @@
 		E3AA8F551FE910FA0072F9B0 /* LLSearchTFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */; };
 		E3AA8F571FEA31960072F9B0 /* LLSpecialTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F561FEA31960072F9B0 /* LLSpecialTCell.swift */; };
 		E3AA8F591FEA328D0072F9B0 /* LLUpdateTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F581FEA328D0072F9B0 /* LLUpdateTCell.swift */; };
+		E3AA8F5B1FEA369E0072F9B0 /* LLRankCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F5A1FEA369E0072F9B0 /* LLRankCCell.swift */; };
+		E3AA8F5D1FEA36C80072F9B0 /* LLTopCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F5C1FEA36C80072F9B0 /* LLTopCCell.swift */; };
+		E3AA8F5F1FEA41460072F9B0 /* LLMineHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F5E1FEA41460072F9B0 /* LLMineHead.swift */; };
+		E3AA8F621FEA53420072F9B0 /* mineListData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3AA8F611FEA53420072F9B0 /* mineListData.plist */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -173,6 +177,10 @@
 		E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSearchTFootView.swift; sourceTree = "<group>"; };
 		E3AA8F561FEA31960072F9B0 /* LLSpecialTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSpecialTCell.swift; sourceTree = "<group>"; };
 		E3AA8F581FEA328D0072F9B0 /* LLUpdateTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLUpdateTCell.swift; sourceTree = "<group>"; };
+		E3AA8F5A1FEA369E0072F9B0 /* LLRankCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLRankCCell.swift; sourceTree = "<group>"; };
+		E3AA8F5C1FEA36C80072F9B0 /* LLTopCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTopCCell.swift; sourceTree = "<group>"; };
+		E3AA8F5E1FEA41460072F9B0 /* LLMineHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMineHead.swift; sourceTree = "<group>"; };
+		E3AA8F611FEA53420072F9B0 /* mineListData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mineListData.plist; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +244,7 @@
 		E3879A311FE11D7800125AEA /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA8F601FEA4ACE0072F9B0 /* LocalData */,
 				E3879A491FE213A700125AEA /* Extension */,
 				E39C17A91FC2C1D50023F134 /* Tools */,
 			);
@@ -262,6 +271,7 @@
 		E3879A361FE2106400125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA8F5E1FEA41460072F9B0 /* LLMineHead.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +378,8 @@
 		E3879A461FE2106500125AEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA8F5A1FEA369E0072F9B0 /* LLRankCCell.swift */,
+				E3AA8F5C1FEA36C80072F9B0 /* LLTopCCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -590,6 +602,14 @@
 			path = SnapKitExtension;
 			sourceTree = "<group>";
 		};
+		E3AA8F601FEA4ACE0072F9B0 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA8F611FEA53420072F9B0 /* mineListData.plist */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -654,6 +674,7 @@
 			files = (
 				E3879A691FE24DAE00125AEA /* Assets.xcassets in Resources */,
 				E39C17AF1FC2C2F80023F134 /* Launch Screen.storyboard in Resources */,
+				E3AA8F621FEA53420072F9B0 /* mineListData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3AA8F291FE8E3FB0072F9B0 /* LLComicHeadView.swift in Sources */,
+				E3AA8F5D1FEA36C80072F9B0 /* LLTopCCell.swift in Sources */,
 				E3879AA01FE3A7C900125AEA /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				E3879A821FE2787C00125AEA /* UIViewExtension.swift in Sources */,
 				E3AA8F381FE8EE120072F9B0 /* LLGuessLikeTCell.swift in Sources */,
@@ -775,6 +797,8 @@
 				E3879A4D1FE2295A00125AEA /* UIBarButtonItemExtension.swift in Sources */,
 				E3AA8F1D1FE79AA10072F9B0 /* LLUpdateListViewController.swift in Sources */,
 				E3879A731FE269ED00125AEA /* LLBaseTableViewHeaderFooterView.swift in Sources */,
+				E3AA8F5F1FEA41460072F9B0 /* LLMineHead.swift in Sources */,
+				E3AA8F5B1FEA369E0072F9B0 /* LLRankCCell.swift in Sources */,
 				E3879A7C1FE2772900125AEA /* ApiTool.swift in Sources */,
 				E3AA8F551FE910FA0072F9B0 /* LLSearchTFootView.swift in Sources */,
 				E3AA8F461FE8FD970072F9B0 /* LLReadTopBar.swift in Sources */,

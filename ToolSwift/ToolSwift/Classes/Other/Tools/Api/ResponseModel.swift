@@ -385,6 +385,11 @@ struct CateListModel: HandyJSON {
     var topList:[TopModel]?
 }
 
+struct MineListData: HandyJSON {
+    var icon: String?
+    var title: String?
+}
+
 extension Array: HandyJSON{}
 
 struct ReturnData<T: HandyJSON>: HandyJSON {
