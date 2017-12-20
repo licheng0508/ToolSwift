@@ -84,6 +84,8 @@
 		E3AA8F511FE907FE0072F9B0 /* LLComicTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */; };
 		E3AA8F531FE910A00072F9B0 /* LLSearchTHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F521FE910A00072F9B0 /* LLSearchTHeadView.swift */; };
 		E3AA8F551FE910FA0072F9B0 /* LLSearchTFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */; };
+		E3AA8F571FEA31960072F9B0 /* LLSpecialTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F561FEA31960072F9B0 /* LLSpecialTCell.swift */; };
+		E3AA8F591FEA328D0072F9B0 /* LLUpdateTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA8F581FEA328D0072F9B0 /* LLUpdateTCell.swift */; };
 		E3DA2FB81FD78C87002EA032 /* HelpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA2FB71FD78C87002EA032 /* HelpTool.swift */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +171,8 @@
 		E3AA8F501FE907FE0072F9B0 /* LLComicTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLComicTCell.swift; sourceTree = "<group>"; };
 		E3AA8F521FE910A00072F9B0 /* LLSearchTHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSearchTHeadView.swift; sourceTree = "<group>"; };
 		E3AA8F541FE910FA0072F9B0 /* LLSearchTFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSearchTFootView.swift; sourceTree = "<group>"; };
+		E3AA8F561FEA31960072F9B0 /* LLSpecialTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLSpecialTCell.swift; sourceTree = "<group>"; };
+		E3AA8F581FEA328D0072F9B0 /* LLUpdateTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLUpdateTCell.swift; sourceTree = "<group>"; };
 		E3DA2FB71FD78C87002EA032 /* HelpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +213,8 @@
 				E3879AA51FE3ACBC00125AEA /* LLComicCCell.swift */,
 				E3879AA71FE3ACF300125AEA /* LLBoardCCell.swift */,
 				E3AA8F201FE7B1BD0072F9B0 /* LLRankTCell.swift */,
+				E3AA8F561FEA31960072F9B0 /* LLSpecialTCell.swift */,
+				E3AA8F581FEA328D0072F9B0 /* LLUpdateTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -760,6 +766,7 @@
 				E3879A5F1FE24CB500125AEA /* LLSubscibeListViewController.swift in Sources */,
 				E39C17791FC2C1370023F134 /* AppDelegate.swift in Sources */,
 				E3AA8F211FE7B1BD0072F9B0 /* LLRankTCell.swift in Sources */,
+				E3AA8F571FEA31960072F9B0 /* LLSpecialTCell.swift in Sources */,
 				E3879AAE1FE3AF1A00125AEA /* LLEmptyDataSet.swift in Sources */,
 				E3879A591FE249E700125AEA /* LLTabBarController.swift in Sources */,
 				E3879AA21FE3AC0F00125AEA /* LLComicCHeadView.swift in Sources */,
@@ -808,6 +815,7 @@
 				E3AA8F421FE8FC470072F9B0 /* LLReadViewController.swift in Sources */,
 				E3879A971FE39FF500125AEA /* CALayerExtension.swift in Sources */,
 				E3AA8F321FE8ED970072F9B0 /* LLDescriptionTCell.swift in Sources */,
+				E3AA8F591FEA328D0072F9B0 /* LLUpdateTCell.swift in Sources */,
 				E3879A941FE3973600125AEA /* LLNetWorkLoadingTool.swift in Sources */,
 				E3AA8F3A1FE8EEA00072F9B0 /* LLOtherWorksViewController.swift in Sources */,
 				E3AA8F2E1FE8EA650072F9B0 /* ParallaxHeaderMode.swift in Sources */,
