@@ -34,7 +34,6 @@ class LLEmptyView: EmptyDataSetSource, EmptyDataSetDelegate {
     var allowShow: Bool = false
     var verticalOffset: CGFloat = 0
     
-    
     private var tapClosure: (() -> Void)?
     
     init(image: UIImage? = UIImage(named: "nodata"), verticalOffset: CGFloat = 0, tapClosure: (() -> Void)?) {
