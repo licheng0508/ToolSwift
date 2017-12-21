@@ -11,10 +11,27 @@ import UIKit
 class LLMineViewController: LLBaseViewController {
 
     private lazy var myArray: [[[String: String]]] = {
-        
-        let path = Bundle.main.path(forResource: "mineListData", ofType: "plist")!
-        let array = NSArray(contentsOfFile: path)! as! [[[String: String]]]
-        return array
+        if let path = Bundle.main.path(forResource: "mineListData", ofType: "plist") {
+            if let array = NSArray(contentsOfFile: path) as? [[[String: String]]] {
+                return array
+            }
+            return [[[:]]]
+        }
+        return [[[:]]]
+    }()
+    
+    private lazy var dataArray: [[MineListDataModel]] = {
+        var dataA: [[MineListDataModel]] = [[]]
+        for tempArray in myArray {
+            var listArray: [MineListDataModel] = []
+            for dic in tempArray{
+                if let model = MineListDataModel.deserialize(from: dic) {
+                    listArray.append(model)
+                }
+            }
+            dataA.append(listArray)
+        }
+        return dataA
     }()
     
     private lazy var head: LLMineHead = {
@@ -74,11 +91,11 @@ extension LLMineViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return myArray.count
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionArray = myArray[section]
+        let sectionArray = dataArray[section]
         return sectionArray.count
     }
     
@@ -94,10 +111,10 @@ extension LLMineViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LLBaseTableViewCell.self)
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .default
-        let sectionArray = myArray[indexPath.section]
-        let dict: [String: String] = sectionArray[indexPath.row]
-        cell.imageView?.image =  UIImage(named: dict["icon"] ?? "")
-        cell.textLabel?.text = dict["title"]
+        let sectionArray = dataArray[indexPath.section]
+        let model = sectionArray[indexPath.row]
+        cell.imageView?.image =  UIImage(named: model.icon ?? "")
+        cell.textLabel?.text = model.title
         return cell
     }
     

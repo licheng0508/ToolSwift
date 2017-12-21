@@ -385,7 +385,7 @@ struct CateListModel: HandyJSON {
     var topList:[TopModel]?
 }
 
-struct MineListData: HandyJSON {
+struct MineListDataModel: HandyJSON {
     var icon: String?
     var title: String?
 }
