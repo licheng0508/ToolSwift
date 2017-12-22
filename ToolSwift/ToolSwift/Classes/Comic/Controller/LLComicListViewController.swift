@@ -46,6 +46,7 @@ class LLComicListViewController: LLBaseViewController {
     
     @objc private func loadData(_ showloading: Bool = false, more: Bool) {
         page = (more ? ( page + 1) : 1)
+        
         ApiToolProvider(showloading).request(ApiTool.comicList(argCon: argCon, argName: argName ?? "", argValue: argValue, page: page),
                                    model: ComicListModel.self) { [weak self] (returnData) in
                                     self?.tableView.MJHead.endRefreshing()
