@@ -25,7 +25,7 @@ let timeoutClosure = {(endpoint: Endpoint<ApiTool>, closure: MoyaProvider<ApiToo
     
     if var urlRequest = endpoint.urlRequest {
         
-        urlRequest.timeoutInterval = 10
+        urlRequest.timeoutInterval = 8
         closure(.success(urlRequest))
     } else {
         closure(.failure(MoyaError.requestMapping(endpoint.url)))

@@ -27,8 +27,7 @@ class LLTopCCell: LLBaseCollectionViewCell {
             $0.edges.equalToSuperview()
         }
     }
-    
-    
+
     var model: TopModel? {
         didSet {
             guard let model = model else { return }
