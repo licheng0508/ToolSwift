@@ -22,6 +22,7 @@ class LLBaseViewController: UIViewController {
             UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
         } else {
             automaticallyAdjustsScrollViewInsets = false
+//            edgesForExtendedLayout = []
         }
         
         configUI()
@@ -38,8 +39,8 @@ class LLBaseViewController: UIViewController {
         guard let navi = navigationController else { return }
         if navi.visibleViewController == self {
             navi.barStyle(.theme)
-            navi.disablePopGesture = false
-            navi.setNavigationBarHidden(false, animated: true)
+//            navi.disablePopGesture = false
+//            navi.setNavigationBarHidden(false, animated: true)
             if navi.viewControllers.count > 1 {
                 navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_back_white"),
                                                                    target: self,
