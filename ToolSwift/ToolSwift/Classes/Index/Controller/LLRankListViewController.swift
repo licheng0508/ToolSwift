@@ -19,7 +19,6 @@ class LLRankListViewController: LLBaseViewController {
         tw.separatorStyle = .none
         tw.delegate = self
         tw.dataSource = self
-        tw.separatorStyle = .none
         tw.register(cellType: LLRankTCell.self)
         tw.MJHead = LLRefreshHeader{ [weak self] in self?.loadData() }
         tw.uempty = LLEmptyView { [weak self] in self?.loadData() }
