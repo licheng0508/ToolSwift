@@ -32,7 +32,6 @@ class LLVIPListViewController: LLBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
             loadData(true)
         }
         

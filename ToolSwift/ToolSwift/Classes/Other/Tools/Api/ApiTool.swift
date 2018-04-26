@@ -77,23 +77,17 @@ extension ApiTool: TargetType {
         case .searchHot: return "search/hotkeywordsnew"
         case .searchRelative: return "search/relative"
         case .searchResult: return "search/searchResult"
-            
         case .boutiqueList: return "comic/boutiqueListNew"
         case .special: return "comic/special"
         case .vipList: return "list/vipList"
         case .subscribeList: return "list/newSubscribeList"
         case .rankList: return "rank/list"
-            
         case .cateList: return "sort/mobileCateList"
-            
         case .comicList: return "list/commonComicList"
-            
         case .guessLike: return "comic/guessLike"
-            
         case .detailStatic: return "comic/detail_static_new"
         case .detailRealtime: return "comic/detail_realtime"
         case .commentList: return "comment/list"
-            
         case .chapter: return "comic/chapterNew"
         }
     }
