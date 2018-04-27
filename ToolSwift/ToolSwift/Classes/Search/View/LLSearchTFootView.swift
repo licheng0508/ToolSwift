@@ -63,7 +63,6 @@ class LLSearchTFootView: LLBaseTableViewHeaderFooterView {
         contentView.addSubview(collectionView)
         collectionView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
-    
 }
 
 extension LLSearchTFootView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

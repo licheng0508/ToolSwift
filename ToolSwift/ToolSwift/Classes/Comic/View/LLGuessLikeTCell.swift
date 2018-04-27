@@ -14,7 +14,6 @@ class LLGuessLikeTCell: LLBaseTableViewCell {
 
     private var didSelectClosure: LLGuessLikeTCellDidSelectClosure?
     
-    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 0, 10)

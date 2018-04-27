@@ -51,7 +51,6 @@ class LLSearchViewController: LLBaseViewController {
         return tw
     }()
     
-    
     lazy var searchTableView: UITableView = {
         let sw = UITableView(frame: CGRect.zero, style: .grouped)
         sw.delegate = self
