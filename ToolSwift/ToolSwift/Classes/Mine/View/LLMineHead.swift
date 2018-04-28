@@ -29,8 +29,6 @@ class LLMineHead: UIView {
         addSubview(bgView)
         bgView.snp.makeConstraints {$0.edges.equalToSuperview() }
         
-        
-        
         NotificationCenter.default.addObserver(self, selector: #selector(sexTypeDidChange), name: .USexTypeDidChange, object: nil)
         sexTypeDidChange()
     }
