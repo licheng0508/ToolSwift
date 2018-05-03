@@ -112,11 +112,11 @@ class LLBoutiqueListViewController: LLBaseViewController {
     private func didSelectBanner(index: NSInteger) {
         let item = galleryItems[index]
         if item.linkType == 2 {
-            guard let url = item.ext?.flatMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
+            guard let url = item.ext?.compactMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
             let vc = LLWebViewController(url: url)
             navigationController?.pushViewController(vc, animated: true)
         } else {
-            guard let comicIdString = item.ext?.flatMap({ return $0.key == "comicId" ? $0.val : nil }).joined(),
+            guard let comicIdString = item.ext?.compactMap({ return $0.key == "comicId" ? $0.val : nil }).joined(),
                 let comicId = Int(comicIdString) else { return }
             let vc = LLComicViewController(comicid: comicId)
             navigationController?.pushViewController(vc, animated: true)
@@ -241,7 +241,7 @@ extension LLBoutiqueListViewController: LLCollectionViewSectionBackgroundLayoutD
             navigationController?.pushViewController(vc, animated: true)
         } else {
             if item.linkType == 2 {
-                guard let url = item.ext?.flatMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
+                guard let url = item.ext?.compactMap({ return $0.key == "url" ? $0.val : nil }).joined() else { return }
                 let vc = LLWebViewController(url: url)
                 navigationController?.pushViewController(vc, animated: true)
             } else {

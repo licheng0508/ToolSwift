@@ -16,7 +16,7 @@ class LLCommentViewController: LLBaseViewController {
     var commentList: CommentListModel? {
         didSet {
             guard let commentList = commentList?.commentList else { return }
-            let viewModelArray = commentList.flatMap { (comment) -> LLCommentViewModel? in
+            let viewModelArray = commentList.compactMap { (comment) -> LLCommentViewModel? in
                 return LLCommentViewModel(model: comment)
             }
             listArray.append(contentsOf: viewModelArray)
