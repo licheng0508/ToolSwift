@@ -45,7 +45,6 @@ class LLCateListViewController: LLBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loadData(true)
     }
     
